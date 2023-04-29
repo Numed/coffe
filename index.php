@@ -1,34 +1,30 @@
+<?php
+/*Template Name: Coffe house */
+?>
+
 <!DOCTYPE html>
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href=" <?php echo get_stylesheet_uri(); ?>">
     <title>Coffe shop</title>
+   
   </head>
   <body>
     <header class="header-main__page">
-      <nav class="header-nav">
-        <ul class="header-nav__list">
-          <li class="nav-link">
-            <img class="img-logo" src="assets/img/logo.png" alt="Logo" /><a
-              href="index.html"
-              >Coffee house</a
-            >
-          </li>
-          <li class="nav-link">
-            <a href="our-coffe.html">Our coffee</a>
-          </li>
-          <li class="nav-link">
-            <a href="for-pleasure.html">For your pleasure</a>
-          </li>
-        </ul>
-      </nav>
+      <?php wp_nav_menu( array( 
+        'theme_location' => 'home',
+        'container' => 'nav',
+        'container_class' => "header-nav",
+        'items_wrap' => '<ul class="header-nav__list">%3$s</ul>'
+         )); ?>
+          <!-- <img class="img-logo" src="<?php bloginfo('template_directory');?>/assets/img/logo.png" alt="Logo" /></a> -->
       <section class="intro-section">
         <div class="intro-inner">
           <h2 class="intro-title">Everything You Love About Coffee</h2>
-          <img class="beans-image" src="assets/img/beans.svg" alt="beans" />
+          <img class="beans-image" src="<?php bloginfo('template_directory');?>/assets/img/beans.svg" alt="beans" />
           <h4 class="intro-subtitle">
             We makes every day full of energy and taste
           </h4>
@@ -41,7 +37,7 @@
       <div class="about-container">
         <div class="about-inner">
           <h3 class="about-title">About Us</h3>
-          <img class="beans-image" src="assets/img/beans.svg" alt="beans" />
+          <img class="beans-image" src="<?php bloginfo('template_directory');?>/assets/img/beans.svg" alt="beans" />
           <p class="about-text">
             Extremity sweetness difficult behaviour he of. On disposal of as
             landlord horrible. Afraid at highly months do things on at.
@@ -70,7 +66,7 @@
             <a href="single-page.html" class="card">
               <img
                 class="card-img"
-                src="assets/img/MainPage/main-card1.png"
+                src="<?php bloginfo('template_directory');?>/assets/img/MainPage/main-card1.png"
                 alt="Best price card #1"
               />
               <h6 class="card-title">Solimo Coffee Beans 2 kg</h6>
@@ -79,7 +75,7 @@
             <a href="single-page.html" class="card">
               <img
                 class="card-img"
-                src="assets/img/MainPage/main-card2.png"
+                src="<?php bloginfo('template_directory');?>/assets/img/MainPage/main-card2.png"
                 alt="Best price card #2"
               />
               <h6 class="card-title">Presto Coffee Beans 1 kg</h6>
@@ -88,7 +84,7 @@
             <a href="single-page.html" class="card">
               <img
                 class="card-img"
-                src="assets/img/MainPage/main-card3.png"
+                src="<?php bloginfo('template_directory');?>/assets/img/MainPage/main-card3.png"
                 alt="Best price card #3"
               />
               <h6 class="card-title">AROMISTICO Coffee 1 kg</h6>
@@ -98,24 +94,6 @@
         </div>
       </div>
     </section>
-    <footer class="footer-container">
-      <div class="footer-inner">
-        <ul class="header-nav__list">
-          <li class="nav-link">
-            <img class="img-logo" src="assets/img/logo.png" alt="Logo" /><a
-              href="index.html"
-              >Coffee house</a
-            >
-          </li>
-          <li class="nav-link">
-            <a href="our-coffe.html">Our coffee</a>
-          </li>
-          <li class="nav-link">
-            <a href="for-pleasure.html">For your pleasure</a>
-          </li>
-        </ul>
-        <img class="beans-image" src="assets/img/beans.svg" alt="beans" />
-      </div>
-    </footer>
+    <?php get_footer(); ?>
   </body>
 </html>

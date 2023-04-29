@@ -1,0 +1,460 @@
+/*
+Theme Name: Coffe shop
+Theme URI: https://github.com/Numed/coffe
+Author: Numed
+Author URI: https://github.com/Numed
+Description: The theme for coffe-mans
+Tags: coffe, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: coffe-shop
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merienda', cursive;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.header {
+    padding: 20px 150px;
+    width: 100%;
+    height: auto;
+}
+
+.header.coffe{
+    background: url('assets/img/AboutBeens/bg.png') no-repeat center;
+    background-size: cover;
+}
+
+.header.pleasure{
+    background: url('assets/img/AboutUs/header-about.png') no-repeat center;
+    background-size: cover;
+}
+
+.header-main__page{
+    padding: 20px 150px;
+    width: 100vw;
+    height: 100vh;
+    background: url("assets/img/MainPage/intro.png") no-repeat center;
+    background-size: cover;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav__list {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    list-style: none;
+}
+.nav-link {
+ margin-left: 40px;
+}
+
+.nav-link a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header-text {
+    margin: 65px 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 58px;
+    color: #FFFFFF;
+}
+
+.intro-section {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 58px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+}
+
+.beans-image {
+    max-width: 200px;
+    margin-bottom: 35px;
+}
+
+.intro-subtitle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+
+.btn-more {
+    border: 1px solid #fff;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    padding: 8px 42px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    text-decoration: none;
+}
+
+.btn-more:hover{
+    background-color: #fff;
+    color: #333;
+}
+
+.about-container {
+    padding-top: 80px;
+    width: 100vw;
+    height: 50vh;
+    background-color: #fff;
+}
+
+.about-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    max-width: 590px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.best-container {
+    margin-top: 80px;
+    width: 100vw;
+    height: 65vh;
+    background: url('assets/img/MainPage/paper-wall.png') no-repeat center;
+    background-size: cover;
+}
+
+.best-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.best-title{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    margin-bottom: 40px;
+}
+
+.best-list {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    background-color: rgba(255,255,255,0.65);
+    padding: 25px 35px;
+    min-height: 240px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+
+.card-img {
+    max-width: 170px;
+    max-height: 135px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card-title {
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.card-price {
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: right;
+}
+
+.footer-container{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-inner {
+    margin-top: 55px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    filter: invert(1);
+}
+
+/* Our beens */
+
+.beens-container {
+    width: 100%;
+    height: 100%;
+    margin-top: 70px;
+}
+
+.beens-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.beens-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 345px;
+    margin-left: 80px;
+}
+
+.text-title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    margin-bottom: 20px;
+}
+
+.beens-text .beans-image{
+    filter: invert(1);
+}
+
+.text-subtitle {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.end-section__line{
+    content: "";
+    width: 240px;
+    background-color: #000000;
+    height: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 75px auto 0;
+}
+
+.coffe-cards {
+    margin-top: 60px;
+    width: 100%;
+    height: 100%;
+}
+
+.filter-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.input-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-search{
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+}
+
+.filter-title {
+    margin-right: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.sort-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-filter {
+    border: none;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    outline: none;
+    margin-left: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn-filter.active{
+    background-color: #333;
+    color: #fff;
+    box-shadow: 4px 4px 20px rgba(255, 255, 255, 0.25);
+}
+
+.cards{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin: 0 auto;
+}
+
+.cards .card{
+    min-height: 260px;
+    min-width: 220px;
+    filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.25));
+}
+
+.cards .card.hide{
+    display: none;
+}
+
+.cards .card-title{
+    min-width: 175px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.card-country{
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: right;
+}
+
+/* Single Page */
+
+.about-it__text{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.about-it__text .text-subtitle{
+    max-width: 420px;
+    text-align: left;
+}
+
+.about-it__text .text-subtitle span{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.text-country {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.text-country span{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.text-price{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.text-price span{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-left: 10px;
+}
