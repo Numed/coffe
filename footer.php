@@ -20,6 +20,6 @@
             <a href="for-pleasure.php">For your pleasure</a>
           </li>
         </ul> -->
-        <img class="beans-image" src="<?php bloginfo('template_directory');?>/assets/img/beans.svg" alt="beans" />
+        <!-- <img class="beans-image" src="<?php bloginfo('template_directory');?>/assets/img/beans.svg" alt="beans" /> -->
       <!-- </div> -->
     </footer>
