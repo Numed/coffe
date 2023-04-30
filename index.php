@@ -20,7 +20,7 @@
         'container_class' => "header-nav",
         'items_wrap' => '<ul class="header-nav__list">%3$s</ul>'
          )); ?>
-          <!-- <img class="img-logo" src="<?php bloginfo('template_directory');?>/assets/img/logo.png" alt="Logo" /></a> -->
+          <img class="img-logo" src="<?php bloginfo('template_directory');?>/assets/img/logo.png" alt="Logo" /></a>
       <section class="intro-section">
         <div class="intro-inner">
           <h2 class="intro-title">Everything You Love About Coffee</h2>

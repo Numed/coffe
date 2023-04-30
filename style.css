@@ -29,6 +29,7 @@ body{
     padding: 20px 150px;
     width: 100%;
     height: auto;
+    position: relative;
 }
 
 .header.coffe{
@@ -54,12 +55,20 @@ body{
     align-items: center;
 }
 
-.header-nav__list {
+.header-nav__list,
+.footer-nav__list {
     display: flex;
     align-items: baseline;
     justify-content: center;
     list-style: none;
 }
+
+.img-logo{
+    position: absolute;
+    top: 10px;
+    left: 150px;
+}
+
 .nav-link {
  margin-left: 40px;
 }
@@ -249,6 +258,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    position: relative;
 }
 
 .footer-inner {
@@ -260,6 +271,16 @@ body{
     justify-content: space-around;
     flex-direction: column;
     filter: invert(1);
+    margin-bottom: 20px;
+}
+
+.footer-container > img{
+    filter: invert(1);
+}
+
+.footer-container .img-logo{
+    top: 20%;
+    left: 40%;
 }
 
 /* Our beens */
