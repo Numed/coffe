@@ -19,8 +19,10 @@
         'container_class' => "header-nav",
         'items_wrap' => '<ul class="header-nav__list">%3$s</ul>'
          )); ?>
+         <img class="img-logo" src="<?php bloginfo('template_directory');?>/assets/img/logo.png" alt="Logo" /></a>
       <div class="header-text">
-        <h2 class="header-title">Our Coffee</h2>
+        <?php $hero = get_field('group_644eb05c7011d');?>
+        <h2 class="header-title"><?php echo the_field('header_title');?></h2>
       </div>
     </header>
     <section class="beens">
@@ -35,11 +37,7 @@
               landlord horrible.
             </p>
             <p class="text-subtitle">
-              Afraid at highly months do things on at. Situation recommend
-              objection do intention so questions. As greatly removed calling
-              pleased improve an. Last ask him cold feel met spot shy want.
-              Children me laughing we prospect answered followed. At it went is
-              song that held help face.
+            <?php echo the_field('about_field');?>
             </p>
           </div>
         </div>
@@ -127,6 +125,6 @@
       </div>
     </section>
     <?php get_footer();?>
-    <script src="assets/js/index.js"></script>
+    <script src="<?php bloginfo('template_directory');?>/assets/js/index.js"></script>
   </body>
 </html>

@@ -19,6 +19,7 @@
         'container_class' => "header-nav",
         'items_wrap' => '<ul class="header-nav__list">%3$s</ul>'
          )); ?>
+         <img class="img-logo" src="<?php bloginfo('template_directory');?>/assets/img/logo.png" alt="Logo" /></a>
       <div class="header-text">
         <h2 class="header-title">For your pleasure</h2>
       </div>
