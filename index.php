@@ -8,7 +8,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href=" <?php echo get_stylesheet_uri(); ?>">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
     <title>Coffe shop</title>
    
   </head>
@@ -63,7 +63,7 @@
         <div class="best-inner">
           <h4 class="best-title">Our best</h4>
           <div class="best-list">
-            <a href="single-page.html" class="card">
+            <a href="<?php bloginfo('template_directory');?>/single-page.php" class="card">
               <img
                 class="card-img"
                 src="<?php bloginfo('template_directory');?>/assets/img/MainPage/main-card1.png"
@@ -72,7 +72,7 @@
               <h6 class="card-title">Solimo Coffee Beans 2 kg</h6>
               <h5 class="card-price">10.73$</h5>
             </a>
-            <a href="single-page.html" class="card">
+            <a href="href="<?php bloginfo('template_directory');?>/single-page.php" class="card">
               <img
                 class="card-img"
                 src="<?php bloginfo('template_directory');?>/assets/img/MainPage/main-card2.png"
@@ -81,7 +81,7 @@
               <h6 class="card-title">Presto Coffee Beans 1 kg</h6>
               <h5 class="card-price">15.99$</h5>
             </a>
-            <a href="single-page.html" class="card">
+            <a href="<?php bloginfo('template_directory');?>/single-page.php" class="card">
               <img
                 class="card-img"
                 src="<?php bloginfo('template_directory');?>/assets/img/MainPage/main-card3.png"

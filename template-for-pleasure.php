@@ -49,7 +49,7 @@
     </section>
     <section class="coffe-cards">
       <div class="cards">
-        <a href="single-page.html" class="card">
+        <a href="<?php bloginfo('template_directory');?>/single-page.php" class="card">
           <img
             class="card-img"
             src="<?php bloginfo('template_directory');?>/assets/img/AboutBeens/been-cards.png"
@@ -59,7 +59,7 @@
           <h4 class="card-country">Brazil</h4>
           <h5 class="card-price">6.99$</h5>
         </a>
-        <a href="single-page.html" class="card">
+        <a href="<?php bloginfo('template_directory');?>/single-page.php" class="card">
           <img
             class="card-img"
             src="<?php bloginfo('template_directory');?>/assets/img/AboutBeens/been-cards.png"
@@ -69,7 +69,7 @@
           <h4 class="card-country">Kenya</h4>
           <h5 class="card-price">6.99$</h5>
         </a>
-        <a href="single-page.html" class="card">
+        <a href="<?php bloginfo('template_directory');?>/single-page.php" class="card">
           <img
             class="card-img"
             src="<?php bloginfo('template_directory');?>/assets/img/AboutBeens/been-cards.png"
@@ -79,7 +79,7 @@
           <h4 class="card-country">Columbia</h4>
           <h5 class="card-price">6.99$</h5>
         </a>
-        <a href="single-page.html" class="card">
+        <a href="<?php bloginfo('template_directory');?>/single-page.php" class="card">
           <img
             class="card-img"
             src="<?php bloginfo('template_directory');?>/assets/img/AboutBeens/been-cards.png"
@@ -89,7 +89,7 @@
           <h4 class="card-country">Brazil</h4>
           <h5 class="card-price">6.99$</h5>
         </a>
-        <a href="single-page.html" class="card">
+        <a href="<?php bloginfo('template_directory');?>/single-page.php" class="card">
           <img
             class="card-img"
             src="<?php bloginfo('template_directory');?>/assets/img/AboutBeens/been-cards.png"
@@ -99,7 +99,7 @@
           <h4 class="card-country">Brazil</h4>
           <h5 class="card-price">6.99$</h5>
         </a>
-        <a href="single-page.html" class="card">
+        <a href="<?php bloginfo('template_directory');?>/single-page.php" class="card">
           <img
             class="card-img"
             src="<?php bloginfo('template_directory');?>/assets/img/AboutBeens/been-cards.png"
